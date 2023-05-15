@@ -1,3 +1,4 @@
+import { OnDestroy } from '@angular/core';
 import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck } from '@angular/core';
 
 @Component({
@@ -6,8 +7,7 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
   styleUrls: ['./check-sample.component.css']
 })
 export class CheckSampleComponent implements
-DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
-
+DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
   quantidade: number = 0;
 
   adicionar() {
@@ -43,5 +43,10 @@ DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked 
   ngAfterViewChecked(): void {
     console.log('AfterViewChecked');
   }
+
+  ngOnDestroy(): void {
+    console.log('Goodbye old friend');
+  }
+
 
 }

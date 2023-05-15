@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-course';
+
+  isAliveCheckSample: boolean = true;
+
+  disposeCheckSample(): void {
+    this.isAliveCheckSample = false;
+  }
 }
