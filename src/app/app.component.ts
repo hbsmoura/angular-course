@@ -9,8 +9,10 @@ export class AppComponent {
   title = 'angular-course';
 
   isAliveCheckSample: boolean = true;
+  isAliveCard: boolean = true;
 
   disposeCheckSample(): void {
     this.isAliveCheckSample = false;
   }
+
 }

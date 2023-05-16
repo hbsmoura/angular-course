@@ -2,10 +2,10 @@
 
 <h2>Hello World!</h2>
 
-<app-check-sample *ngIf="isAliveCheckSample"></app-check-sample>
+<app-card *ngIf="isAliveCard; else anotherBlock"></app-card>
 
-<button (click)="disposeCheckSample()"> Destruir </button>
-
-<app-card></app-card>
+<ng-template #anotherBlock>
+  <p>Bloco secreto</p>
+</ng-template>
 
 <router-outlet></router-outlet>
