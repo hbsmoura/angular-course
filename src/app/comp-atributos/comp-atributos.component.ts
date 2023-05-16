@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class CompAtributosComponent {
     estilo: string = 'enable'
+    corFundo: string = 'gray'
+    corDaFonte: string = 'green'
 
     trocar(): void {
         this.estilo = this.estilo === 'enable' ? 'disable' : 'enable'
