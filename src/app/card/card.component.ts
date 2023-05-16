@@ -7,14 +7,15 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent {
     produtos: string[] = []
-    menuType: string = '';
+    item: string = ''
+    menuType: string = ''
 
     constructor() {
         this.produtos = ['mouse', 'teclado', 'cabo', 'fonte']
     }
 
     adicionar(): void {
-        this.produtos.push('novo')
+        if(this.item !== '') this.produtos.push(this.item)
     }
 
     remover(index: number): void {
