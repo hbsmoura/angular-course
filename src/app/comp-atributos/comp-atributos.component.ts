@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./comp-atributos.component.css']
 })
 export class CompAtributosComponent {
+    estilo: string = 'enable'
 
+    trocar(): void {
+        this.estilo = this.estilo === 'enable' ? 'disable' : 'enable'
+    }
 }
