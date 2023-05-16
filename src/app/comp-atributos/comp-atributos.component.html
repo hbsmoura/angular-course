@@ -2,3 +2,11 @@
 <button (click)="trocar()">Trocar</button>
 
 <h1 [ngStyle]="{'background': corFundo, 'color': corDaFonte}">Curso de Angular</h1>
+
+<hr>
+
+<!-- ngTemplate é desabilitado por padrãol, não aparece na view -->
+<ng-template [ngIf]="true">
+    <a href="#">Finalizar</a>
+</ng-template>
+<hr>
