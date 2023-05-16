@@ -5,8 +5,13 @@
 
 <hr>
 
+<ng-content select="h3"></ng-content>
+
 <!-- ngTemplate é desabilitado por padrãol, não aparece na view -->
 <ng-template [ngIf]="true">
     <a href="#">Finalizar</a>
 </ng-template>
+
 <hr>
+
+<ng-content select="p"></ng-content>
