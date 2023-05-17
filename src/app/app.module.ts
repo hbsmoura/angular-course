@@ -8,6 +8,7 @@ import { TitleComponent } from './title/title.component';
 import { CheckSampleComponent } from './check-sample/check-sample.component';
 import { CardComponent } from './card/card.component';
 import { CompAtributosComponent } from './comp-atributos/comp-atributos.component';
+import { ListaModule } from './lista/lista.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CompAtributosComponent } from './comp-atributos/comp-atributos.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ListaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
